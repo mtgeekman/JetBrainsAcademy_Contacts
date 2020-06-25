@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ContactsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-06-25T04:36:04" hostname="mintyfresh" time="0.067">
+  <properties/>
+  <testcase name="start" classname="ContactsTest" time="0.067"/>
+  <system-out><![CDATA[?[1;31m
+Start test 1?[0m
+Enter the name of the person:
+> John
+Enter the surname of the person:
+> Smith
+Enter the number:
+> 1-234-567-890
+A record created!
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

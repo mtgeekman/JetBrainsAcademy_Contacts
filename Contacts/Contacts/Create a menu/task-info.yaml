@@ -212,6 +212,59 @@ files:
     \        }\n        catch (Exception ex) {\n            return new CheckResult(false,\
     \ \"Can't check the answer\");\n        }\n    }\n}\n"
   learner_created: false
+- name: src/contacts/Contact.java
+  visible: true
+  text: |
+    package contacts;
+
+    public class Contact {
+        String firstName;
+        String lastName;
+        String phoneNumber;
+
+        public Contact(String fName, String lName, String pNumber) {
+            this.firstName = fName;
+            this.lastName = lName;
+            this.phoneNumber = pNumber;
+            System.out.println("A record created!");
+        }
+
+
+    }
+  learner_created: true
+- name: src/contacts/PhoneBook.java
+  visible: true
+  text: |
+    package contacts;
+
+    public class PhoneBook {
+
+    }
+  learner_created: true
+- name: src/contacts/Main.java
+  visible: true
+  text: |
+    package contacts;
+
+    import java.util.Scanner;
+
+    public class Main {
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.println("Enter the name of the person:");
+            String fName = scanner.nextLine();
+            System.out.println("Enter the surname of the person:");
+            String lName = scanner.nextLine();
+            System.out.println("Enter the number:");
+            String pNumber = scanner.nextLine();
+
+            Contact contact = new Contact(fName, lName, pNumber);
+
+
+        }
+    }
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/43/stages/229/implement
 status: Unchecked
 record: -1

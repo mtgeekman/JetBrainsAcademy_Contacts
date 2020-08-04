@@ -7,7 +7,7 @@ public class Main {
 
         int numberOfVariables = Integer.parseInt(scanner.nextLine());
         // /(?(?<=\s)(delish)|(ew))/
-        String regex = "_{0,1}[a-zA-Z]([^_]*[a-zA-Z0-9]{1,})*";
+        String regex = "((_{0,1}[a-zA-Z]|_[0-9])([^_]*[a-zA-Z0-9]{1,})*)*";
 
         for (int i = 0; i < numberOfVariables; i++) {
             String identifier = scanner.nextLine();

@@ -8,3 +8,7 @@ Contacts/.gradle/buildOutputCleanup/cache.properties
 *.bin
 *.bin
 *.lock
+
+Contacts/.idea/
+
+Contacts/.gradle/
